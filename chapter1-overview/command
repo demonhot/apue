@@ -1,0 +1,102 @@
+//copy directories under branch to baseline
+find . | grep -v "\.svn\|\.git" | cpio -l -pdvu ~/workspace/mtk6795/mtk6795_5.1_baseline_150630
+find . | grep -v "\.svn\|\.git" | cpio -l -pdvu ~/workspace/mtk6753/mtk6753_5.1_baseline_150803
+
+---A6-52-CH---------------------------
+find . | grep -v "\.svn\|\.git" | cpio -l -pdvu ~/workspace/a6-52-ch/branch_main/dbg_6752_A6-52_android5.1_SW_150424/
+find . | grep -v "\.svn\|\.git" | cpio -l -pdvu ~/workspace/a6-52-ch/6752_android5.1_baseline_150424
+--------------------------------------
+---OPH--------------------------------
+find . | grep -v "\.svn\|\.git" | cpio -l -pdvu ~/workspace/fsl_base
+--------------------------------------
+
+find . -type f | grep -v "\.svn"
+
+Build Command:
+. build/envsetup.sh
+m clobber
+choosecombo "release" "full_teft6752_lwt_l" "eng"
+export TF_RELEASE_NUMBER=
+export TF_BUILD_ID=
+make -j16 2>&1 |tee output.logs
+
+
+build kernel:
+make -j8 kernel 2>&1 |tee kernel.logs
+make -j8 bootimage 2>1&1 |tee bootimage.logs
+
+---ZIHU-L(MT6735)--------------------------------------------------------------------------
+ZIHU-L base:
+svn://192.168.81.138/mtk6753_150803/tags/mtk6753_5.1_baseline_150803
+
+ZIHU-L branch:
+svn://192.168.81.138/mtk6753_150803/branches/SW/dbg_6753_ZiHu-L_SW_150803
+
+ZIHU-L 8G branch:
+svn://192.168.81.138/mtk6753_150803/branches/SW/dbg_6753_ZiHu-L_1+8G_SW_151209
+
+ZIHU-L oversea branch:
+svn://192.168.81.138/mtk6753_150803/branches/SW/dbg_6753_ZiHu-L_overseas_SW_160328
+
+-------------------------------------------------------------------------------------------
+
+---ZIHU-2(MT6795)--------------------------------------------------------------------------
+ZIHU-2 base:
+svn://192.168.81.138/mtk6795_150630/tags/mtk6795_5.1_baseline_150630
+
+ZIHU-2 branch:
+svn://192.168.81.138/mtk6795_150630/branches/SW/dbg_6795_ZiHu-2_SW_150727
+-------------------------------------------------------------------------------------------
+
+--A6-52---------------------------------------------------------------------------------
+A6-52 base:
+svn://192.168.81.138/android_mtk5.1_150424/tags/6752_android5.1_baseline_150424
+
+A6-52 branch:
+svn://192.168.81.138/android_mtk5.1_150424/branches/SW/dbg_6752_A6-52_android5.1_SW_150424
+
+A6-52-CH Special:
+svn://192.168.81.138/android_mtk5.1_150424/branches/SW/dbg_6752_A6-52_CH_android5.1_SW_150831
+
+A6-52-MTT Special:
+svn://192.168.81.138/android_mtk5.1_150424/branches/Special/MTK6752_Android5.1/A6-52-MTT
+
+A6-52-CH-3+32 Special:
+svn://192.168.81.138/android_mtk5.1_150424/branches/Special/MTK6752_Android5.1/A6-52_CH_3+32
+
+A6-52-3+32 gsm Special
+svn://192.168.81.138/android_mtk5.1_150424/branches/Special/MTK6752_Android5.1/A6-52_3+32_gms 
+ 
+-----------------------------------------------------------------------------------------
+
+--MT6589_T_4.4_JPAD-----------------------------------------------------------------------------------------
+baseline：
+svn://192.168.81.138/android_mtk_120816/tags/MT6589_T_4.4_baseline_140415
+branch：
+svn://192.168.81.138/android_mtk_120816/branches/SW/dbg_MT6589_T_4.4_JPAD_SW_140415
+-------------------------------------------------------------------------------------------
+
+
+--camera effect build-------------------------------------------------------------------------
+rm ./out/target/product/teft6752_65c_l/obj/STATIC_LIBRARIES/libcameracustom.imgsensor_intermediates/ -rf
+rm ./out/target/product/teft6752_65c_l/obj/KERNEL_OBJ/drivers/misc/mediatek/imgsensor/src/ -rf
+rm ./out/target/product/teft6752_65c_l/obj_arm/STATIC_LIBRARIES/libcameracustom.imgsensor_intermediates/ -rf
+------------------------------------------------------------------------------------------
+
+--zihu-l modem---------------------------------------------------------------------------------
+svn://192.168.81.138/mtk6753_150803/branches/SW/dbg_6753_ZiHu-L_modem_SW_150817
+------------------------------------------------------------------------------------------
+
+--fastboot------------------------------------------------------------------------------
+fastboot flash boot xxx
+fastboot flash bootloader xxx
+fastboot flash recovery xxx
+fastboot flash system xxx
+fastboot reboot ,press"*"buttom
+----------------------------------------------------------------------------------------
+
+--diff---------------------------------------------------------------------------------
+svn > view > Preference > 
+
+
+

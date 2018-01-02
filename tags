@@ -1,0 +1,155 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AR	Make.mk	/^AR=ar$/;"	m
+AWK	Make.mk	/^AWK=awk$/;"	m
+BIGCOUNT	lib/semaph.c	43;"	d	file:
+BUFFSIZE	chapter1-overview/ubuffer_io.c	2;"	d	file:
+CBREAK	lib/ttymodes.c	/^static enum { RESET, RAW, CBREAK }	ttystate = RESET;$/;"	e	enum:__anon1	file:
+CC	Make.mk	/^CC=gcc$/;"	m
+CFLAGS	Make.mk	/^CFLAGS=-ansi -I$(ROOT)\/include -Wall -DLINUX -D_GNU_SOURCE $(EXTRA)$/;"	m
+CLI_PATH	lib/cliconn.c	6;"	d	file:
+CLI_PERM	lib/cliconn.c	7;"	d	file:
+COMPILE.c	Make.mk	/^COMPILE.c=$(CC) $(CFLAGS) $(CPPFLAGS) -c$/;"	m
+CONTROLLEN	lib/Orecvfd.c	5;"	d	file:
+CONTROLLEN	lib/recvfd.c	5;"	d	file:
+CONTROLLEN	lib/sendfd.c	5;"	d	file:
+DIRS	Makefile	/^DIRS = lib chapter1-overview$/;"	m
+DIR_MODE	include/apue.h	39;"	d
+FILE_MODE	include/apue.h	34;"	d
+LDDIR	Make.mk	/^LDDIR=-L$(ROOT)\/lib$/;"	m
+LDFLAGS	Make.mk	/^LDFLAGS=$/;"	m
+LDLIBS	Make.mk	/^LDLIBS=$(LDDIR) -lapue $(EXTRALIBS)$/;"	m
+LIBAPUE	Make.mk	/^LIBAPUE=$(ROOT)\/lib\/libapue.a$/;"	m
+LIBMISC	lib/Makefile	/^LIBMISC	= libapue.a$/;"	m
+LINK.c	Make.mk	/^LINK.c=$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)$/;"	m
+MAXARGC	lib/bufargs.c	3;"	d	file:
+MAXLINE	include/apue.h	29;"	d
+OBJS	lib/Makefile	/^OBJS   = bufargs.o cliconn.o clrfl.o \\$/;"	m
+OPEN_MAX_GUESS	lib/openmax.c	14;"	d	file:
+PATH_MAX_GUESS	lib/pathalloc.c	15;"	d	file:
+PROGS	chapter1-overview/Makefile	/^PROGS = myls ubuffer_io std_io getpid process$/;"	m
+QLEN	lib/servlisten.c	6;"	d	file:
+RANLIB	Make.mk	/^RANLIB=echo$/;"	m
+RAW	lib/ttymodes.c	/^static enum { RESET, RAW, CBREAK }	ttystate = RESET;$/;"	e	enum:__anon1	file:
+RELOP	lib/recvfd.c	10;"	d	file:
+RELOP	lib/recvfd.c	8;"	d	file:
+RESET	lib/ttymodes.c	/^static enum { RESET, RAW, CBREAK }	ttystate = RESET;$/;"	e	enum:__anon1	file:
+ROOT	chapter1-overview/Makefile	/^ROOT=..$/;"	m
+ROOT	lib/Makefile	/^ROOT=..$/;"	m
+STALE	lib/servaccept.c	7;"	d	file:
+Sigfunc	include/apue.h	/^typedef	void	Sigfunc(int);	\/* for signal handlers *\/$/;"	t
+TELL_CHILD	lib/tellwait.c	/^TELL_CHILD(pid_t pid)$/;"	f
+TELL_PARENT	lib/tellwait.c	/^TELL_PARENT(pid_t pid)$/;"	f
+TELL_WAIT	lib/tellwait.c	/^TELL_WAIT(void)$/;"	f
+TEMPFILES	Make.mk	/^TEMPFILES=core core.* *.o temp.* *.out$/;"	m
+WAIT_CHILD	lib/tellwait.c	/^WAIT_CHILD(void)$/;"	f
+WAIT_PARENT	lib/tellwait.c	/^WAIT_PARENT(void)$/;"	f
+WHITE	lib/bufargs.c	4;"	d	file:
+_APUE_H	include/apue.h	5;"	d
+_POSIX_C_SOURCE	include/apue.h	7;"	d
+_XOPEN_SOURCE	include/apue.h	10;"	d
+_XOPEN_SOURCE	include/apue.h	12;"	d
+buf_args	lib/bufargs.c	/^buf_args(char *buf, int (*optfunc)(int, char **))$/;"	f
+childpid	lib/popen.c	/^static pid_t	*childpid = NULL;$/;"	v	file:
+cli_conn	lib/cliconn.c	/^cli_conn(const char *name)$/;"	f
+clr_fl	lib/clrfl.c	/^clr_fl(int fd, int flags)$/;"	f
+cmptr	lib/Orecvfd.c	/^static struct cmsghdr	*cmptr = NULL;		\/* malloc'ed first time *\/$/;"	v	typeref:struct:cmsghdr	file:
+cmptr	lib/recvfd.c	/^static struct cmsghdr	*cmptr = NULL;		\/* malloc'ed first time *\/$/;"	v	typeref:struct:cmsghdr	file:
+cmptr	lib/sendfd.c	/^static struct cmsghdr	*cmptr = NULL;	\/* malloc'ed first time *\/$/;"	v	typeref:struct:cmsghdr	file:
+daemonize	lib/daemonize.c	/^daemonize(const char *cmd)$/;"	f
+err_cont	lib/error.c	/^err_cont(int error, const char *fmt, ...)$/;"	f
+err_doit	lib/error.c	/^err_doit(int errnoflag, int error, const char *fmt, va_list ap)$/;"	f	file:
+err_dump	lib/error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_exit	lib/error.c	/^err_exit(int error, const char *fmt, ...)$/;"	f
+err_msg	lib/error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_quit	lib/error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_ret	lib/error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_sys	lib/error.c	/^err_sys(const char *fmt, ...)$/;"	f
+fd_pipe	lib/spipe.c	/^fd_pipe(int fd[2])$/;"	f
+is_read_lockable	include/apue.h	107;"	d
+is_write_lockable	include/apue.h	109;"	d
+lock_reg	lib/lockreg.c	/^lock_reg(int fd, int cmd, int type, off_t offset, int whence, off_t len)$/;"	f
+lock_test	lib/locktest.c	/^lock_test(int fd, int type, off_t offset, int whence, off_t len)$/;"	f
+log_doit	lib/errorlog.c	/^log_doit(int errnoflag, int error, int priority, const char *fmt,$/;"	f	file:
+log_exit	lib/errorlog.c	/^log_exit(int error, const char *fmt, ...)$/;"	f
+log_msg	lib/errorlog.c	/^log_msg(const char *fmt, ...)$/;"	f
+log_open	lib/errorlog.c	/^log_open(const char *ident, int option, int facility)$/;"	f
+log_quit	lib/errorlog.c	/^log_quit(const char *fmt, ...)$/;"	f
+log_ret	lib/errorlog.c	/^log_ret(const char *fmt, ...)$/;"	f
+log_sys	lib/errorlog.c	/^log_sys(const char *fmt, ...)$/;"	f
+main	chapter1-overview/getpid.c	/^main(void)$/;"	f
+main	chapter1-overview/myls.c	/^int main(int argc, char *argv[])$/;"	f
+main	chapter1-overview/process.c	/^main(void)$/;"	f
+main	chapter1-overview/std_io.c	/^main(void)$/;"	f
+main	chapter1-overview/ubuffer_io.c	/^int main(void)$/;"	f
+max	include/apue.h	44;"	d
+maxfd	lib/popen.c	/^static int		maxfd;$/;"	v	file:
+min	include/apue.h	43;"	d
+newmask	lib/tellwait.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+ns_pipe	lib/nspipe.c	/^ns_pipe(const char *name, int fd[2])$/;"	f
+oldmask	lib/tellwait.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+op_close	lib/semaph.c	/^static struct sembuf	op_close[3] = {$/;"	v	typeref:struct:sembuf	file:
+op_endcreate	lib/semaph.c	/^static struct sembuf	op_endcreate[2] = {$/;"	v	typeref:struct:sembuf	file:
+op_lock	lib/semaph.c	/^static struct sembuf	op_lock[2] = {$/;"	v	typeref:struct:sembuf	file:
+op_op	lib/semaph.c	/^static struct sembuf	op_op[1] = {$/;"	v	typeref:struct:sembuf	file:
+op_open	lib/semaph.c	/^static struct sembuf	op_open[1] = {$/;"	v	typeref:struct:sembuf	file:
+op_unlock	lib/semaph.c	/^static struct sembuf	op_unlock[1] = {$/;"	v	typeref:struct:sembuf	file:
+open_max	lib/openmax.c	/^open_max(void)$/;"	f
+openmax	lib/openmax.c	/^static long	openmax = 0;$/;"	v	file:
+openmax	lib/openmax.c	/^static long	openmax = OPEN_MAX;$/;"	v	file:
+path_alloc	lib/pathalloc.c	/^path_alloc(size_t *sizep) \/* also return allocated size, if nonnull *\/$/;"	f
+pathmax	lib/pathalloc.c	/^static long	pathmax = 0;$/;"	v	file:
+pathmax	lib/pathalloc.c	/^static long	pathmax = PATH_MAX;$/;"	v	file:
+pclose	lib/popen.c	/^pclose(FILE *fp)$/;"	f
+popen	lib/popen.c	/^popen(const char *cmdstring, const char *type)$/;"	f
+posix_version	lib/pathalloc.c	/^static long	posix_version = 0;$/;"	v	file:
+pr_err	chapter1-overview/myls.c	4;"	d	file:
+pr_exit	lib/prexit.c	/^pr_exit(int status)$/;"	f
+pr_mask	lib/prmask.c	/^pr_mask(const char *str)$/;"	f
+pty_fork	lib/ptyfork.c	/^pty_fork(int *ptrfdm, char *slave_name, int slave_namesz,$/;"	f
+ptym_open	lib/ptyopen.c	/^ptym_open(char *pts_name, int pts_namesz)$/;"	f
+ptys_open	lib/ptyopen.c	/^ptys_open(char *pts_name)$/;"	f
+read_lock	include/apue.h	94;"	d
+readn	lib/readn.c	/^readn(int fd, void *ptr, size_t n)$/;"	f
+readw_lock	include/apue.h	96;"	d
+recv_fd	lib/Orecvfd.c	/^recv_fd(int fd, ssize_t (*userfunc)(int, const void *, size_t))$/;"	f
+recv_fd	lib/recvfd.c	/^recv_fd(int fd, ssize_t (*userfunc)(int, const void *, size_t))$/;"	f
+save_termios	lib/ttymodes.c	/^static struct termios		save_termios;$/;"	v	typeref:struct:termios	file:
+sem_close	lib/semaph.c	/^sem_close(int id)$/;"	f
+sem_create	lib/semaph.c	/^sem_create(key_t key, int initval)$/;"	f
+sem_op	lib/semaph.c	/^sem_op(int id, int value)$/;"	f
+sem_open	lib/semaph.c	/^sem_open(key_t key)$/;"	f
+sem_rm	lib/semaph.c	/^sem_rm(int id)$/;"	f
+sem_signal	lib/semaph.c	/^sem_signal(int id)$/;"	f
+sem_wait	lib/semaph.c	/^sem_wait(int id)$/;"	f
+send_err	lib/senderr.c	/^send_err(int fd, int errcode, const char *msg)$/;"	f
+send_fd	lib/sendfd.c	/^send_fd(int fd, int fd_to_send)$/;"	f
+serv_accept	lib/servaccept.c	/^serv_accept(int listenfd, uid_t *uidptr)$/;"	f
+serv_listen	lib/servlisten.c	/^serv_listen(const char *name)$/;"	f
+set_cloexec	lib/setfd.c	/^set_cloexec(int fd)$/;"	f
+set_fl	lib/setfl.c	/^set_fl(int fd, int flags) \/* flags are file status flags to turn on *\/$/;"	f
+sig_alrm	lib/sleep.c	/^sig_alrm(int signo)$/;"	f	file:
+sig_usr	lib/tellwait.c	/^sig_usr(int signo)	\/* one signal handler for SIGUSR1 and SIGUSR2 *\/$/;"	f	file:
+sigflag	lib/tellwait.c	/^static volatile sig_atomic_t sigflag; \/* set nonzero by sig handler *\/$/;"	v	file:
+signal	lib/signal.c	/^signal(int signo, Sigfunc *func)$/;"	f
+signal_intr	lib/signalintr.c	/^signal_intr(int signo, Sigfunc *func)$/;"	f
+sleep	lib/sleep.c	/^sleep(unsigned int seconds)$/;"	f
+sleep_us	lib/sleepus.c	/^sleep_us(unsigned int nusecs)$/;"	f
+strerror	lib/strerror.c	/^strerror(int error)$/;"	f
+tty_atexit	lib/ttymodes.c	/^tty_atexit(void)		\/* can be set up by atexit(tty_atexit) *\/$/;"	f
+tty_cbreak	lib/ttymodes.c	/^tty_cbreak(int fd)	\/* put terminal into a cbreak mode *\/$/;"	f
+tty_raw	lib/ttymodes.c	/^tty_raw(int fd)		\/* put terminal into a raw mode *\/$/;"	f
+tty_reset	lib/ttymodes.c	/^tty_reset(int fd)		\/* restore terminal's mode *\/$/;"	f
+tty_termios	lib/ttymodes.c	/^tty_termios(void)		\/* let caller see original tty state *\/$/;"	f
+ttysavefd	lib/ttymodes.c	/^static int					ttysavefd = -1;$/;"	v	file:
+ttystate	lib/ttymodes.c	/^static enum { RESET, RAW, CBREAK }	ttystate = RESET;$/;"	v	typeref:enum:__anon1	file:
+un_lock	include/apue.h	102;"	d
+write_lock	include/apue.h	98;"	d
+writen	lib/writen.c	/^writen(int fd, const void *ptr, size_t n)$/;"	f
+writew_lock	include/apue.h	100;"	d
+xsi_version	lib/pathalloc.c	/^static long	xsi_version = 0;$/;"	v	file:
+zeromask	lib/tellwait.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:

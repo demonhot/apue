@@ -1,7 +1,7 @@
 ROOT=..
 include $(ROOT)/Make.mk
 
-PROGS = myls ubuffer_io std_io getpid process hand_err signal
+PROGS = lseek lseek-1 fcntl symlink redirect append
 
 all:	$(PROGS)
 
