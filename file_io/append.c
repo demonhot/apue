@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	if(write(fd, buf, 10) < 0)
 		err_sys("write fail");
 	lseek(fd, -2, SEEK_END);
-	printf("read number is %d\n", read(fd, buf_1, 4));
+	printf("read number is %d\n",(int) read(fd, buf_1, 4));
 	exit(0);
 
 }

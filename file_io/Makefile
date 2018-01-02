@@ -1,7 +1,7 @@
 ROOT=..
 include $(ROOT)/Make.mk
 
-PROGS = lseek lseek-1 fcntl symlink redirect append
+PROGS = lseek lseek-1 fcntl symlink redirect append mktime
 
 all:	$(PROGS)
 
