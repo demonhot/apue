@@ -4,6 +4,7 @@
  *       Filename:  append.c
  *
  *    Description:  append
+ *					1.if multiple preocess open the file, the file must be opened with "O_APPEND"
  *
  *        Version:  1.0
  *        Created:  2018年01月02日 15时44分51秒
