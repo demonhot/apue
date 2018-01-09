@@ -1,4 +1,4 @@
-DIRS = lib chapter1-overview file_io file_dir standard_io_libary
+DIRS = lib chapter1-overview file_io file_dir standard_io_libary process_env process_control
 
 all:
 	for i in $(DIRS); do \
