@@ -1,0 +1,2 @@
+When compile thread,we meet /usr/bin/ld: cannot find -lbsd. please refer to the website:
+http://www.bkjia.com/ASPjc/878278.html
